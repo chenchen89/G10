@@ -1,0 +1,2110 @@
+nohup: ignoring input
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+rm -f y.tab.o lex.yy.o  ast.o  analysis.o  errors.o  utility.o  libyywrap.o  codegen.o  simulationComponents.o  simulationEvents.o  simulator.o  main.o  lex.yy.c dpp.yy.c y.tab.c y.tab.h *.core core gpg.purify purify.log  y.output gpg 
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+bison -dvty parser.y
+bison -dvty parser.y
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o ast.o ast.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o analysis.o analysis.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o errors.o errors.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o utility.o utility.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o libyywrap.o libyywrap.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o codegen.o codegen.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o simulationComponents.o simulationComponents.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o simulationEvents.o simulationEvents.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o simulator.o simulator.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o main.o main.cc
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o y.tab.o y.tab.c
+codegen.cc: In function ‘std::string exec(CUDAKernelType, int, const std::vector<long int>&)’:
+codegen.cc:42:39: warning: ignoring attributes on template argument ‘int (*)(FILE*)’ [-Wignored-attributes]
+   42 |     unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd.c_str(), "r"), pclose);
+      |                                       ^
+codegen.cc: In function ‘std::string exec(const std::string&, int)’:
+codegen.cc:56:39: warning: ignoring attributes on template argument ‘int (*)(FILE*)’ [-Wignored-attributes]
+   56 |     unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd.c_str(), "r"), pclose);
+      |                                       ^
+flex -d scanner.l
+g++ -g -Wall -Wno-unused -Wno-sign-compare -O3 -c -o lex.yy.o lex.yy.c
+analysis.cc: In function ‘void scheduling_prefetch()’:
+analysis.cc:3063:17: warning: ‘issue_index’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3063 |             int issue_index;
+      |                 ^~~~~~~~~~~
+analysis.cc:2925:17: warning: ‘issue_index’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2925 |             int issue_index;
+      |                 ^~~~~~~~~~~
+g++ -o gpg y.tab.o lex.yy.o  ast.o  analysis.o  errors.o  utility.o  libyywrap.o  codegen.o  simulationComponents.o  simulationEvents.o  simulator.o  main.o  -lc -lm -ll
+Configs are generated to folder </NewData/hantch/G10/src/configs>
+Total 1500 configs generated (1410 run config + 90 profile config)
+error connecting to /tmp/tmux-1005/default (No such file or directory)
+PATTERN: (BERT\/256|VIT\/1280|Inceptionv3\/1536|ResNet152\/1280|SENet154\/1024)-sim_(deepUM|prefetch_lru|FlashNeuron|G10GDSSSD|G10GDSFULL|lru)\.config
+Total 30 sim configs found
+ [0;31mx[0m <BERT/256-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_G10GDSFULL.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_G10GDSSSD.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <BERT/256-sim_prefetch_lru.config> 
+ [0;31mx[0m <Inceptionv3/1536-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_G10GDSFULL.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_G10GDSSSD.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_G10GDSFULL.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_G10GDSSSD.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_G10GDSFULL.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_G10GDSSSD.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_G10GDSFULL.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_G10GDSSSD.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+Found [0;33m0[0m invalid result(s), [0;31m29[0m missing result(s) and [0;32m1[0m valid result(s). Total 30
+make: Entering directory '/NewData/hantch/G10/src'
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+make: Nothing to be done for 'default'.
+make: Leaving directory '/NewData/hantch/G10/src'
+Rerun 29 sim configssession BERT spawned
+.
+.
+session Inceptionv3 spawned
+..
+....
+........
+....
+..
+session ResNet152 spawned
+.......................................................................................................
+..
+........
+..
+.........
+..........
+session SENet154 spawned
+....................
+...
+.........................................
+..........................................................................
+................
+......
+session VIT spawned
+..........................
+session VIT spawned
+.
+..
+..
+............................
+All sim configs launched, waiting for completion.................................................................................................................................................................................................................................
+Done
+PATTERN: (BERT\/(128|256|512|768|1024)|VIT\/(256|512|768|1024|1280)|Inceptionv3\/(512|768|1024|1280|1536|1792)|ResNet152\/(256|512|768|1024|1280)|SENet154\/(256|512|768|1024))-sim_(deepUM|prefetch_lru|FlashNeuron|lru)\.config
+Total 100 sim configs found
+ [0;31mx[0m <BERT/1024-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/1024-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/1024-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/1024-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/128-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/128-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/128-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/128-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <BERT/256-sim_deepUM.config> 
+ [0;33m-[0m <BERT/256-sim_FlashNeuron.config>: 5 missing 0 invalid [0;31mOUT FOLDER REMOVED[0m [0;32mRERUN[0m
+ [0;32mo[0m <BERT/256-sim_lru.config> 
+ [0;32mo[0m <BERT/256-sim_prefetch_lru.config> 
+ [0;31mx[0m <BERT/512-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/768-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/768-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/768-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/768-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <Inceptionv3/1536-sim_deepUM.config> 
+ [0;33m-[0m <Inceptionv3/1536-sim_FlashNeuron.config>: 5 missing 0 invalid [0;31mOUT FOLDER REMOVED[0m [0;32mRERUN[0m
+ [0;32mo[0m <Inceptionv3/1536-sim_lru.config> 
+ [0;32mo[0m <Inceptionv3/1536-sim_prefetch_lru.config> 
+ [0;31mx[0m <Inceptionv3/1792-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1792-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1792-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1792-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/768-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/768-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/768-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/768-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <ResNet152/1280-sim_deepUM.config> 
+ [0;33m-[0m <ResNet152/1280-sim_FlashNeuron.config>: 5 missing 0 invalid [0;31mOUT FOLDER REMOVED[0m [0;32mRERUN[0m
+ [0;32mo[0m <ResNet152/1280-sim_lru.config> 
+ [0;32mo[0m <ResNet152/1280-sim_prefetch_lru.config> 
+ [0;31mx[0m <ResNet152/256-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/256-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/256-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/256-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/512-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/512-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/512-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/512-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <SENet154/1024-sim_deepUM.config> 
+ [0;33m-[0m <SENet154/1024-sim_FlashNeuron.config>: 5 missing 0 invalid [0;31mOUT FOLDER REMOVED[0m [0;32mRERUN[0m
+ [0;32mo[0m <SENet154/1024-sim_lru.config> 
+ [0;32mo[0m <SENet154/1024-sim_prefetch_lru.config> 
+ [0;31mx[0m <SENet154/256-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <VIT/1280-sim_deepUM.config> 
+ [0;33m-[0m <VIT/1280-sim_FlashNeuron.config>: 5 missing 0 invalid [0;31mOUT FOLDER REMOVED[0m [0;32mRERUN[0m
+ [0;32mo[0m <VIT/1280-sim_lru.config> 
+ [0;32mo[0m <VIT/1280-sim_prefetch_lru.config> 
+ [0;31mx[0m <VIT/256-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/256-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/256-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/256-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/512-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/512-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/512-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/512-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_deepUM.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_FlashNeuron.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+Found [0;33m5[0m invalid result(s), [0;31m80[0m missing result(s) and [0;32m15[0m valid result(s). Total 100
+make: Entering directory '/NewData/hantch/G10/src'
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+make: Nothing to be done for 'default'.
+make: Leaving directory '/NewData/hantch/G10/src'
+Rerun 85 sim configssession BERT spawned
+.
+.........
+..
+...........
+.......
+..
+................................................
+...
+...............
+.....
+..
+.
+........................
+.......
+...................................
+..
+......
+...............
+............
+..
+.................................
+.......
+session Inceptionv3:1536-sim_FlashNeuron already exists
+..........................................
+.
+............
+.................
+.............................
+..
+.....................................
+............
+..............
+.
+................
+.......
+session ResNet152 spawned
+.......
+..
+.......................
+..
+..
+..........................
+..
+...............................
+................
+.........
+..
+...................
+..................
+....
+..
+.......................
+.........
+session SENet154 spawned
+...
+session SENet154 spawned
+.....................................
+...
+.............
+.............
+.............
+...
+..........................
+...
+..................................................................
+...
+.............................................
+........
+.....................
+..
+......................
+.......
+session VIT:1280-sim_FlashNeuron already exists
+...
+..
+...
+...
+..
+.......
+...
+...
+..
+..........
+All sim configs launched, waiting for completion.............................................................................................
+Done
+PATTERN: (BERT\/(256|384|512|640)|VIT\/(768|1024|1280|1536)|Inceptionv3\/(512|1024|1280|1536)|ResNet152\/(768|1024|1280|1536)|SENet154\/(256|512|768|1024))-sim_prefetch_lru(-cpu(0|16|32|64|96|192|256))?\.config
+Total 128 sim configs found
+ [0;32mo[0m <BERT/256-sim_prefetch_lru.config> 
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/384-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/384-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/384-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/384-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/384-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/384-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <BERT/512-sim_prefetch_lru.config> 
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/640-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/640-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/640-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/640-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/640-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/640-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <Inceptionv3/1024-sim_prefetch_lru.config> 
+ [0;31mx[0m <Inceptionv3/1024-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1024-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <Inceptionv3/1280-sim_prefetch_lru.config> 
+ [0;31mx[0m <Inceptionv3/1280-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <Inceptionv3/1536-sim_prefetch_lru.config> 
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <Inceptionv3/512-sim_prefetch_lru.config> 
+ [0;31mx[0m <Inceptionv3/512-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/512-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <ResNet152/1024-sim_prefetch_lru.config> 
+ [0;31mx[0m <ResNet152/1024-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_prefetch_lru-cpu192.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1024-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <ResNet152/1280-sim_prefetch_lru.config> 
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-cpu192.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1536-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1536-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1536-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1536-sim_prefetch_lru-cpu192.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1536-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1536-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1536-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <ResNet152/768-sim_prefetch_lru.config> 
+ [0;31mx[0m <ResNet152/768-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_prefetch_lru-cpu192.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/768-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <SENet154/1024-sim_prefetch_lru.config> 
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-cpu96.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <SENet154/256-sim_prefetch_lru.config> 
+ [0;31mx[0m <SENet154/256-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/256-sim_prefetch_lru-cpu96.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <SENet154/512-sim_prefetch_lru.config> 
+ [0;31mx[0m <SENet154/512-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/512-sim_prefetch_lru-cpu96.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <SENet154/768-sim_prefetch_lru.config> 
+ [0;31mx[0m <SENet154/768-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/768-sim_prefetch_lru-cpu96.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <VIT/1024-sim_prefetch_lru.config> 
+ [0;31mx[0m <VIT/1024-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <VIT/1280-sim_prefetch_lru.config> 
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1536-sim_prefetch_lru.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1536-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1536-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1536-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1536-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1536-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <VIT/768-sim_prefetch_lru.config> 
+ [0;31mx[0m <VIT/768-sim_prefetch_lru-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_prefetch_lru-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_prefetch_lru-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_prefetch_lru-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/768-sim_prefetch_lru-cpu64.config>: output folder does not exist [0;32mRUN[0m
+Found [0;33m0[0m invalid result(s), [0;31m112[0m missing result(s) and [0;32m16[0m valid result(s). Total 128
+make: Entering directory '/NewData/hantch/G10/src'
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+make: Nothing to be done for 'default'.
+make: Leaving directory '/NewData/hantch/G10/src'
+Rerun 112 sim configssession BERT spawned
+...............
+.
+.
+.............
+...........
+..
+...............
+..........
+.
+..............
+..............
+...........
+...............
+.........................
+............
+.
+...............
+.........................
+..........
+............
+..........
+............................
+..........
+............
+...............................................
+...................
+.
+........
+.....................................................
+..............................................
+.....................
+.........................
+..
+.........
+...............
+session ResNet152 spawned
+...
+.........
+...............
+......................................................................................................................
+..........
+...............
+.
+........................................................................................................
+............
+...........................................................................................
+............
+...................................................
+............
+..............................................................................................................................................
+.......
+..................................................................................
+...........................
+..........................................................................................................
+....................................................
+........................
+...............................................................................
+.........
+....
+..............................................................................
+.....
+session SENet154 spawned
+....
+...............................................................................
+......................................................................................................................................................................................
+......................................................................................................
+..........................................................................................
+........................................................
+........
+.................................................
+............
+...............................................
+............
+...............................................
+.........
+...............................................................................
+............................
+.......
+.
+......................................................................................
+.............................
+....................................................................................................................................................
+..................
+.....................................
+..............
+................
+.................
+.............
+....
+..............
+.......
+.............
+........
+.............
+........
+.....
+............
+.
+........
+.....
+..........
+..
+.
+.......
+All sim configs launched, waiting for completion..........
+Done
+PATTERN: (VIT\/1024|Inceptionv3\/1280)-sim_(deepUM|prefetch_lru|FlashNeuron)-cpu(0|16|32|64|256)\.config
+Total 20 sim configs found
+ [0;31mx[0m <Inceptionv3/1280-sim_deepUM-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_deepUM-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_deepUM-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_deepUM-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1280-sim_deepUM-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <Inceptionv3/1280-sim_prefetch_lru-cpu0.config> 
+ [0;32mo[0m <Inceptionv3/1280-sim_prefetch_lru-cpu16.config> 
+ [0;32mo[0m <Inceptionv3/1280-sim_prefetch_lru-cpu256.config> 
+ [0;32mo[0m <Inceptionv3/1280-sim_prefetch_lru-cpu32.config> 
+ [0;32mo[0m <Inceptionv3/1280-sim_prefetch_lru-cpu64.config> 
+ [0;31mx[0m <VIT/1024-sim_deepUM-cpu0.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_deepUM-cpu16.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_deepUM-cpu256.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_deepUM-cpu32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1024-sim_deepUM-cpu64.config>: output folder does not exist [0;32mRUN[0m
+ [0;32mo[0m <VIT/1024-sim_prefetch_lru-cpu0.config> 
+ [0;32mo[0m <VIT/1024-sim_prefetch_lru-cpu16.config> 
+ [0;32mo[0m <VIT/1024-sim_prefetch_lru-cpu256.config> 
+ [0;32mo[0m <VIT/1024-sim_prefetch_lru-cpu32.config> 
+ [0;32mo[0m <VIT/1024-sim_prefetch_lru-cpu64.config> 
+Found [0;33m0[0m invalid result(s), [0;31m10[0m missing result(s) and [0;32m10[0m valid result(s). Total 20
+make: Entering directory '/NewData/hantch/G10/src'
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+make: Nothing to be done for 'default'.
+make: Leaving directory '/NewData/hantch/G10/src'
+Rerun 10 sim configs..............................................................................................
+.........
+...
+..
+................
+...
+All sim configs launched, waiting for completion.............................................................
+Done
+PATTERN: (BERT\/512|VIT\/1280|Inceptionv3\/1536|ResNet152\/1280|SENet154\/1024)-sim_(deepUM|prefetch_lru|FlashNeuron|lru)-ssd(6_4|12_8|19_2|25_6|32)-.*\.config
+Total 100 sim configs found
+ [0;31mx[0m <BERT/512-sim_deepUM-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_deepUM-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_deepUM-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_deepUM-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_deepUM-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_FlashNeuron-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_FlashNeuron-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_FlashNeuron-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_FlashNeuron-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_FlashNeuron-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/512-sim_prefetch_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_deepUM-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_deepUM-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_deepUM-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_deepUM-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_deepUM-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_FlashNeuron-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_FlashNeuron-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_FlashNeuron-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_FlashNeuron-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_FlashNeuron-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_deepUM-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_deepUM-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_deepUM-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_deepUM-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_deepUM-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_FlashNeuron-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_FlashNeuron-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_FlashNeuron-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_FlashNeuron-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_FlashNeuron-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_deepUM-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_deepUM-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_deepUM-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_deepUM-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_deepUM-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_FlashNeuron-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_FlashNeuron-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_FlashNeuron-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_FlashNeuron-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_FlashNeuron-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_deepUM-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_deepUM-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_deepUM-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_deepUM-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_deepUM-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_FlashNeuron-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_FlashNeuron-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_FlashNeuron-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_FlashNeuron-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_FlashNeuron-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-ssd12_8-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-ssd19_2-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-ssd25_6-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-ssd32-pcie32.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-ssd6_4-pcie32.config>: output folder does not exist [0;32mRUN[0m
+Found [0;33m0[0m invalid result(s), [0;31m100[0m missing result(s) and [0;32m0[0m valid result(s). Total 100
+make: Entering directory '/NewData/hantch/G10/src'
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+make: Nothing to be done for 'default'.
+make: Leaving directory '/NewData/hantch/G10/src'
+Rerun 100 sim configssession BERT spawned
+.........................................
+.
+.
+.
+.
+.
+....................................
+........
+.
+.
+..................................
+....
+.....
+............................
+....
+...................................................................................
+............................
+.
+.
+.
+.
+.
+..
+..................................................................................
+............................
+.
+..
+................................................................................
+...............
+.
+................
+session ResNet152 spawned
+.............................................................
+.............
+..............
+.............................................
+..........................................................
+..
+..
+..
+..
+..
+......
+............
+...................................................
+......................................................................................................
+..
+...........
+................................................
+..................................................................................................
+...........
+..
+session SENet154 spawned
+............................................
+................................................................................................
+..............
+......................................................................
+......................................
+...
+...
+...
+...
+...
+.....................................................................................
+......................
+..........................................................................................
+........................................................................................................
+.......................................................................
+..........................
+...................................................................................
+......................................................................................................................................
+............................
+............................
+..........................
+..........................
+...................
+.......
+.....................
+.
+.
+.
+.
+.
+...........................
+.
+.............................
+.
+......................
+...
+................
+..
+All sim configs launched, waiting for completion..........................................
+Done
+PATTERN: (BERT\/256|VIT\/1280|Inceptionv3\/1536|ResNet152\/1280|SENet154\/1024)-sim_prefetch_lru-var0_(05|10|15|20|25)\.config
+Total 25 sim configs found
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-var0_05.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-var0_10.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-var0_15.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-var0_20.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <BERT/256-sim_prefetch_lru-var0_25.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-var0_05.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-var0_10.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-var0_15.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-var0_20.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <Inceptionv3/1536-sim_prefetch_lru-var0_25.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-var0_05.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-var0_10.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-var0_15.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-var0_20.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <ResNet152/1280-sim_prefetch_lru-var0_25.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-var0_05.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-var0_10.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-var0_15.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-var0_20.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <SENet154/1024-sim_prefetch_lru-var0_25.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-var0_05.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-var0_10.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-var0_15.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-var0_20.config>: output folder does not exist [0;32mRUN[0m
+ [0;31mx[0m <VIT/1280-sim_prefetch_lru-var0_25.config>: output folder does not exist [0;32mRUN[0m
+Found [0;33m0[0m invalid result(s), [0;31m25[0m missing result(s) and [0;32m0[0m valid result(s). Total 25
+make: Entering directory '/NewData/hantch/G10/src'
+Makefile:59: warning: ignoring prerequisites on suffix rule definition
+make: Nothing to be done for 'default'.
+make: Leaving directory '/NewData/hantch/G10/src'
+Rerun 25 sim configssession BERT spawned
+...............
+.
+..............
+..........................................................................................
+..
+session ResNet152 spawned
+.
+.........
+............................................................................................
+..............................................................
+...
+session SENet154 spawned
+......
+..................................................................................................
+..............................................................
+.................................................................................................................
+.
+.....................
+.....................
+.....................
+.....................
+All sim configs launched, waiting for completion..............................................................................................................................................................................................
+Done
+model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+pcie_bw     : {'15.754': 0, '32': 1}
+ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+All data is saved to </NewData/hantch/G10/src/resources/raw_output/data.json>
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+===========================================
+>>> Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+===========================================
+Model being processed: BERT_Base
+Index selection:
+  X:['256']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'G10GDSSSD', 'G10GDSFULL', 'prefetch_lru']
+Slice shape: (1, 7)
+Slice content:
+lru | FlashNeuron | deepUM | G10GDSSSD | G10GDSFULL | prefetch_lru | ideal
+
+256
+23580084389 12258600000 10992552904 10851936000 9586308000 8773229325 8742558777
+
+
+Model being processed: VIT
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'G10GDSSSD', 'G10GDSFULL', 'prefetch_lru']
+Slice shape: (1, 7)
+Slice content:
+lru | FlashNeuron | deepUM | G10GDSSSD | G10GDSFULL | prefetch_lru | ideal
+
+1280
+29519610761 inf 9069040214 7891464000 7480380000 6647685439 4459141336
+
+
+Model being processed: Inceptionv3
+Index selection:
+  X:['1536']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'G10GDSSSD', 'G10GDSFULL', 'prefetch_lru']
+Slice shape: (1, 7)
+Slice content:
+lru | FlashNeuron | deepUM | G10GDSSSD | G10GDSFULL | prefetch_lru | ideal
+
+1536
+337188727906 inf 106402260905 96408720000 78443760000 73303772339 71633241480
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'G10GDSSSD', 'G10GDSFULL', 'prefetch_lru']
+Slice shape: (1, 7)
+Slice content:
+lru | FlashNeuron | deepUM | G10GDSSSD | G10GDSFULL | prefetch_lru | ideal
+
+1280
+562689016883 210313199999 158428482477 186429600000 138846000000 137304113890 135107260924
+
+
+Model being processed: SENet154
+Index selection:
+  X:['1024']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'G10GDSSSD', 'G10GDSFULL', 'prefetch_lru']
+Slice shape: (1, 7)
+Slice content:
+lru | FlashNeuron | deepUM | G10GDSSSD | G10GDSFULL | prefetch_lru | ideal
+
+1024
+876972455232 299263200000 231771470702 202371600000 175298400000 170748120306 159444570406
+
+
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Model being processed: BERT_Base
+Index selection:
+  X:['256']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+256
+15503581680.0 2930.03 2249994127.0 30670548.0
+
+
+256
+0.0 3405.64 3853364207.0 2058378730.0
+
+
+256
+9408614845.0 3879.82 4889194570.0 6684180047.0
+
+
+Model being processed: VIT
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1280
+25053329486.0 inf 4609898878.0 2188544103.0
+
+
+1280
+0.0 inf 3292102151.0 2121132018.0
+
+
+1280
+4452001397.0 inf 1167039185.0 2338009318.0
+
+
+Model being processed: Inceptionv3
+Index selection:
+  X:['1536']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1536
+235710245210.0 inf 44275315595.0 2538077728.0
+
+
+1536
+0.0 inf 19254373702.0 25660126748.0
+
+
+1536
+41788000264.0 inf 61885163948.0 46840661601.0
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1280
+379953470053.0 62671.5 23321221553.0 2327609315.0
+
+
+1280
+0.0 92397.8 110722482951.0 88971398872.0
+
+
+1280
+87478975018.0 20191.6 24384777973.0 46266618401.0
+
+
+Model being processed: SENet154
+Index selection:
+  X:['1024']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1024
+671071330553.0 116516.0 73972755555.0 12825228604.0
+
+
+1024
+0.0 88364.8 129561274494.0 143884361373.0
+
+
+1024
+112988016133.0 44505.7 31529151171.0 17081887737.0
+
+
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Model being processed: BERT_Base
+Index selection:
+  X:['256']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+256
+0.0 2657376.0 0.0 565248.0
+0.0 2657376.0 0.0 565248.0
+45385726.0 0.0 13094159.0 1769472.0
+45385726.0 0.0 13094159.0 1769472.0
+Model being processed: VIT
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1280
+6142981.0 inf 0.0 1275114.0
+6142981.0 inf 0.0 1275114.0
+52147993.0 inf 16704165.0 5763114.0
+52147993.0 inf 16531491.0 5763114.0
+Model being processed: Inceptionv3
+Index selection:
+  X:['1536']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1536
+16868024.0 inf 0.0 7038712.0
+179317540.0 inf 0.0 7038712.0
+16568024.0 inf 74599733.0 20206786.0
+50122456.0 inf 74599733.0 20206786.0
+Model being processed: ResNet152
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1280
+53413406.0 65040772.0 35845670.0 28533808.0
+294049213.0 65040772.0 35845670.0 28533808.0
+19255672.0 0.0 38077759.0 35827967.0
+52810104.0 0.0 38077759.0 35827967.0
+Model being processed: SENet154
+Index selection:
+  X:['1024']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (1, 4)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru
+
+1024
+75357583.0 85933120.0 55208777.0 48848663.0
+479537590.0 85933120.0 55208777.0 48848663.0
+17413090.0 0.0 47643868.0 35958986.0
+50967522.0 0.0 47643868.0 35958986.0
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+===========================================
+>>> Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+===========================================
+Model being processed: Inceptionv3
+Index selection:
+  X:['512', '768', '1024', '1280', '1536', '1792']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (6, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+512
+117365755337 64334880000 64418641013 64660726103 64334907021
+
+768
+171787706192 76461120000 68571753293 67778637737 67755018354
+
+1024
+228619078837 96826560000 77282983645 71623659498 71175129706
+
+1280
+281790221558 120602400000 89416665795 73042083515 71939325757
+
+1536
+337188727906 inf 106402260905 73303772339 71633241480
+
+1792
+420596517873 inf 115541481020 84114846477 71327218061
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['256', '512', '768', '1024', '1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+256
+167654684435 127328400000 127328819564 127337222181 127328819564
+
+512
+254437688799 132902400000 130104165057 130306919425 130102121477
+
+768
+348565870120 149685600000 135031635971 131972689921 131772813229
+
+1024
+453725543778 176937600000 143114819385 133620599659 133443504983
+
+1280
+562689016883 210313199999 158428482477 137304113890 135107260924
+
+
+Model being processed: SENet154
+Index selection:
+  X:['256', '512', '768', '1024']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (4, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+256
+269514649445 155317200000 155961670602 155355877501 155317502505
+
+512
+448753650495 173780400000 161127405858 157565571821 157510221863
+
+768
+661747242302 214098000000 192407066623 159970337093 159702941130
+
+1024
+876972455232 299263200000 231771470702 170748120306 159444570406
+
+
+Model being processed: VIT
+Index selection:
+  X:['256', '512', '768', '1024', '1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+256
+2549893347 2549892000 2549893347 2549893347 2549893347
+
+512
+9130997171 3046776000 3658386673 3046857122 3046779498
+
+768
+13461050398 3483071999 5185388382 3483108604 3483077226
+
+1024
+17966709814 6322764000 6937327671 5321021687 3919374961
+
+1280
+29519610761 inf 9069040214 6647685439 4459141336
+
+
+Model being processed: BERT_Base
+Index selection:
+  X:['128', '256', '512', '768', '1024']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+128
+13178010664 7087164000 7566762920 7087296457 7087159999
+
+256
+23580084389 12258600000 10992552904 8773229325 8742558777
+
+512
+97051580903 52895639999 18980722809 17607178175 11799396628
+
+768
+179071570852 inf 29273426578 26629926444 16948222288
+
+1024
+278235045099 inf 69938662465 47061169065 20928839947
+
+
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Model being processed: Inceptionv3
+Index selection:
+  X:['512', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+512 | 1024 | 1280 | 1536
+
+0
+64549428101 79712808677 107696634727 137788384845
+
+16
+64660726103 71534593453 87565938039 117824519462
+
+32
+64660726103 71623659498 73019761346 84400011796
+
+64
+64660726103 71623659498 73042083515 73303772339
+
+128
+64660726103 71623659498 73042083515 73303772339
+
+256
+64660726103 71623659498 73042083515 73303772339
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '192', '256']
+Slice shape: (7, 4)
+Slice content:
+768 | 1024 | 1280 | 1536
+
+0
+152985117833 237650499817 287288155712 367697693724
+
+16
+136251992538 221129723709 267176068631 363795042310
+
+32
+131839038866 156371535941 246625212878 332128651137
+
+64
+131972689921 135130065661 172612029217 302569731661
+
+128
+131972689921 133620599659 137304113890 172703158575
+
+192
+131972689921 133620599659 137304113890 146198351710
+
+256
+131972689921 133620599659 137304113890 146198351710
+
+
+Model being processed: SENet154
+Index selection:
+  X:['256', '512', '768', '1024']
+  Y:['0', '16', '32', '64', '96', '128', '256']
+Slice shape: (7, 4)
+Slice content:
+256 | 512 | 768 | 1024
+
+0
+155424595015 164698687715 299136703741 380141374801
+
+16
+155355877501 157565026376 268935947811 362396685554
+
+32
+155355877501 157562341401 180140013023 343308407640
+
+64
+155355877501 157565571821 159969884722 296152349858
+
+96
+155355877501 157565571821 159970337093 193074953407
+
+128
+155355877501 157565571821 159970337093 170748120306
+
+256
+155355877501 157565571821 159970337093 163324244226
+
+
+Model being processed: VIT
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+768 | 1024 | 1280 | 1536
+
+0
+3483108604 6362807714 17949831696 26280758428
+
+16
+3483108604 4952214530 5949926570 14744299592
+
+32
+3483108604 5321021687 6647685439 8500323906
+
+64
+3483108604 5321021687 6647685439 8500323906
+
+128
+3483108604 5321021687 6647685439 8500323906
+
+256
+3483108604 5321021687 6647685439 8500323906
+
+
+Model being processed: BERT_Base
+Index selection:
+  X:['256', '384', '512', '640']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+256 | 384 | 512 | 640
+
+0
+12341928800 31123000008 51286017824 78027898291
+
+16
+8773229325 20347585184 38067752803 63000911338
+
+32
+8773229325 13858250190 28773806207 46834889971
+
+64
+8773229325 13858250190 17607178175 29637263962
+
+128
+8773229325 13858250190 17607178175 21946607476
+
+256
+8773229325 13858250190 17607178175 21946607476
+
+
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Model being processed: Inceptionv3
+Index selection:
+  X:['512', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/deepUM/inception.txt
+512 | 1024 | 1280 | 1536
+
+0
+inf inf 156902635094 inf
+
+16
+inf inf 136558921326 inf
+
+32
+inf inf 120115422094 inf
+
+64
+inf inf 100480771312 inf
+
+128
+64418641013 77282983645 89416665795 106402260905
+
+256
+inf inf 89416665795 inf
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '192', '256']
+Slice shape: (7, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/deepUM/resnet.txt
+768 | 1024 | 1280 | 1536
+
+0
+inf inf inf inf
+
+16
+inf inf inf inf
+
+32
+inf inf inf inf
+
+64
+inf inf inf inf
+
+128
+135031635971 143114819385 158428482477 inf
+
+192
+inf inf inf inf
+
+256
+inf inf inf inf
+
+
+Model being processed: SENet154
+Index selection:
+  X:['256', '512', '768', '1024']
+  Y:['0', '16', '32', '64', '96', '128', '256']
+Slice shape: (7, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/deepUM/senet.txt
+256 | 512 | 768 | 1024
+
+0
+inf inf inf inf
+
+16
+inf inf inf inf
+
+32
+inf inf inf inf
+
+64
+inf inf inf inf
+
+96
+inf inf inf inf
+
+128
+155961670602 161127405858 192407066623 231771470702
+
+256
+inf inf inf inf
+
+
+Model being processed: VIT
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/deepUM/vit.txt
+768 | 1024 | 1280 | 1536
+
+0
+inf 29011207388 inf inf
+
+16
+inf 18499758842 inf inf
+
+32
+inf 7359374215 inf inf
+
+64
+inf 6937327671 inf inf
+
+128
+5185388382 6937327671 9069040214 inf
+
+256
+inf 6937327671 inf inf
+
+
+Model being processed: BERT_Base
+Index selection:
+  X:['256', '384', '512', '640']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/deepUM/bert.txt
+256 | 384 | 512 | 640
+
+0
+inf inf inf inf
+
+16
+inf inf inf inf
+
+32
+inf inf inf inf
+
+64
+inf inf inf inf
+
+128
+10992552904 inf 18980722809 inf
+
+256
+inf inf inf inf
+
+
+Model being processed: Inceptionv3
+Index selection:
+  X:['512', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/FlashNeuron/inception.txt
+512 | 1024 | 1280 | 1536
+
+0
+64334880000 96826560000 120602400000 inf
+
+16
+64334880000 96826560000 120602400000 inf
+
+32
+64334880000 96826560000 120602400000 inf
+
+64
+64334880000 96826560000 120602400000 inf
+
+128
+64334880000 96826560000 120602400000 inf
+
+256
+64334880000 96826560000 120602400000 inf
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '192', '256']
+Slice shape: (7, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/FlashNeuron/resnet.txt
+768 | 1024 | 1280 | 1536
+
+0
+149685600000 176937600000 210313199999 inf
+
+16
+149685600000 176937600000 210313199999 inf
+
+32
+149685600000 176937600000 210313199999 inf
+
+64
+149685600000 176937600000 210313199999 inf
+
+128
+149685600000 176937600000 210313199999 inf
+
+192
+149685600000 176937600000 210313199999 inf
+
+256
+149685600000 176937600000 210313199999 inf
+
+
+Model being processed: SENet154
+Index selection:
+  X:['256', '512', '768', '1024']
+  Y:['0', '16', '32', '64', '96', '128', '256']
+Slice shape: (7, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/FlashNeuron/senet.txt
+256 | 512 | 768 | 1024
+
+0
+155317200000 173780400000 214098000000 299263200000
+
+16
+155317200000 173780400000 214098000000 299263200000
+
+32
+155317200000 173780400000 214098000000 299263200000
+
+64
+155317200000 173780400000 214098000000 299263200000
+
+96
+155317200000 173780400000 214098000000 299263200000
+
+128
+155317200000 173780400000 214098000000 299263200000
+
+256
+155317200000 173780400000 214098000000 299263200000
+
+
+Model being processed: VIT
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/FlashNeuron/vit.txt
+768 | 1024 | 1280 | 1536
+
+0
+3483071999 6322764000 inf inf
+
+16
+3483071999 6322764000 inf inf
+
+32
+3483071999 6322764000 inf inf
+
+64
+3483071999 6322764000 inf inf
+
+128
+3483071999 6322764000 inf inf
+
+256
+3483071999 6322764000 inf inf
+
+
+Model being processed: BERT_Base
+Index selection:
+  X:['256', '384', '512', '640']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/FlashNeuron/bert.txt
+256 | 384 | 512 | 640
+
+0
+12258600000 inf 52895639999 inf
+
+16
+12258600000 inf 52895639999 inf
+
+32
+12258600000 inf 52895639999 inf
+
+64
+12258600000 inf 52895639999 inf
+
+128
+12258600000 inf 52895639999 inf
+
+256
+12258600000 inf 52895639999 inf
+
+
+Model being processed: Inceptionv3
+Index selection:
+  X:['512', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/prefetch_lru/inception.txt
+512 | 1024 | 1280 | 1536
+
+0
+64549428101 79712808677 107696634727 137788384845
+
+16
+64660726103 71534593453 87565938039 117824519462
+
+32
+64660726103 71623659498 73019761346 84400011796
+
+64
+64660726103 71623659498 73042083515 73303772339
+
+128
+64660726103 71623659498 73042083515 73303772339
+
+256
+64660726103 71623659498 73042083515 73303772339
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '192', '256']
+Slice shape: (7, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/prefetch_lru/resnet.txt
+768 | 1024 | 1280 | 1536
+
+0
+152985117833 237650499817 287288155712 367697693724
+
+16
+136251992538 221129723709 267176068631 363795042310
+
+32
+131839038866 156371535941 246625212878 332128651137
+
+64
+131972689921 135130065661 172612029217 302569731661
+
+128
+131972689921 133620599659 137304113890 172703158575
+
+192
+131972689921 133620599659 137304113890 146198351710
+
+256
+131972689921 133620599659 137304113890 146198351710
+
+
+Model being processed: SENet154
+Index selection:
+  X:['256', '512', '768', '1024']
+  Y:['0', '16', '32', '64', '96', '128', '256']
+Slice shape: (7, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/prefetch_lru/senet.txt
+256 | 512 | 768 | 1024
+
+0
+155424595015 164698687715 299136703741 380141374801
+
+16
+155355877501 157565026376 268935947811 362396685554
+
+32
+155355877501 157562341401 180140013023 343308407640
+
+64
+155355877501 157565571821 159969884722 296152349858
+
+96
+155355877501 157565571821 159970337093 193074953407
+
+128
+155355877501 157565571821 159970337093 170748120306
+
+256
+155355877501 157565571821 159970337093 163324244226
+
+
+Model being processed: VIT
+Index selection:
+  X:['768', '1024', '1280', '1536']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/prefetch_lru/vit.txt
+768 | 1024 | 1280 | 1536
+
+0
+3483108604 6362807714 17949831696 26280758428
+
+16
+3483108604 4952214530 5949926570 14744299592
+
+32
+3483108604 5321021687 6647685439 8500323906
+
+64
+3483108604 5321021687 6647685439 8500323906
+
+128
+3483108604 5321021687 6647685439 8500323906
+
+256
+3483108604 5321021687 6647685439 8500323906
+
+
+Model being processed: BERT_Base
+Index selection:
+  X:['256', '384', '512', '640']
+  Y:['0', '16', '32', '64', '128', '256']
+Slice shape: (6, 4)
+Slice content:
+figure_drawing/sensitivity_cpumem_combined/prefetch_lru/bert.txt
+256 | 384 | 512 | 640
+
+0
+12341928800 31123000008 51286017824 78027898291
+
+16
+8773229325 20347585184 38067752803 63000911338
+
+32
+8773229325 13858250190 28773806207 46834889971
+
+64
+8773229325 13858250190 17607178175 29637263962
+
+128
+8773229325 13858250190 17607178175 21946607476
+
+256
+8773229325 13858250190 17607178175 21946607476
+
+
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Model being processed: Inceptionv3
+Index selection:
+  X:['6.4', '12.8', '19.2', '25.6', '32']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'ideal']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+6.4
+212444805056 inf 86472998400 72039774720 71633241480
+
+12.8
+172393333702 inf 86472998400 74629731840 71633241480
+
+19.2
+167706515553 inf 86472998400 72138585600 71633241480
+
+25.6
+162189005478 inf 86472998400 72134776320 71633241480
+
+32
+142470992476 inf 86472998400 72123840000 71633241480
+
+
+Model being processed: ResNet152
+Index selection:
+  X:['6.4', '12.8', '19.2', '25.6', '32']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'ideal']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+6.4
+349900245252 157513199999 137575380480 135155608778 135107260924
+
+12.8
+273361825405 140578800000 135680409600 135661386868 135107260924
+
+19.2
+267037945858 137686800000 135641717760 135712770626 135107260924
+
+25.6
+256187649595 136570799999 135641717760 135520168519 135107260924
+
+32
+213395443644 136135200000 135641717760 135500037120 135107260924
+
+
+Model being processed: SENet154
+Index selection:
+  X:['6.4', '12.8', '19.2', '25.6', '32']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'ideal']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+6.4
+572047441270 214111199999 181142008320 162121320960 159444570406
+
+12.8
+455389915510 178260000000 168667829760 161534630400 159444570406
+
+19.2
+452462168950 170776800000 168037900800 162758599680 159444570406
+
+25.6
+465804761406 167906400000 167872097280 160712432640 159444570406
+
+32
+335865285050 166207200000 167795758080 160551237120 159444570406
+
+
+Model being processed: VIT
+Index selection:
+  X:['6.4', '12.8', '19.2', '25.6', '32']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'ideal']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+6.4
+16807310019 inf 5919267840 4752427121 4459141336
+
+12.8
+14708174819 inf 5917893120 4991216640 4459141336
+
+19.2
+14683038095 inf 5919490560 4690590105 4459141336
+
+25.6
+16546240099 inf 5919567360 4663418880 4459141336
+
+32
+13178555729 inf 5919567360 4916920320 4459141336
+
+
+Model being processed: BERT_Base
+Index selection:
+  X:['6.4', '12.8', '19.2', '25.6', '32']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'ideal']
+Slice shape: (5, 5)
+Slice content:
+lru | FlashNeuron | deepUM | prefetch_lru | ideal
+
+6.4
+58661716375 31092239999 14036052480 13409734351 11799396628
+
+12.8
+44546170418 20515320000 14025761279 12546441523 11799396628
+
+19.2
+41641108375 17067240000 14027573759 12527583140 11799396628
+
+25.6
+43989237655 15347760000 14028042239 12527106979 11799396628
+
+32
+27366752424 14320920000 14028080639 12619023677 11799396628
+
+
+Parsing json file </NewData/hantch/G10/src/resources/raw_output/data.json>
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Unified Dimensions:
+  model       : {'ResNet152': 0, 'SENet154': 1, 'Inceptionv3': 2, 'BERT_Base': 3, 'VIT': 4}
+  batch_size  : {'128': 0, '256': 1, '384': 2, '512': 3, '640': 4, '768': 5, '1024': 6, '1280': 7, '1536': 8, '1792': 9}
+  setting     : {'lru': 0, 'FlashNeuron': 1, 'deepUM': 2, 'prefetch_lru': 3, 'G10GDSSSD': 4, 'G10GDSFULL': 5}
+  cpu_mem     : {'0': 0, '16': 1, '32': 2, '64': 3, '96': 4, '128': 5, '192': 6, '256': 7}
+  ssd_bw      : {'3.2': 0, '6.4': 1, '12.8': 2, '19.2': 3, '25.6': 4, '32': 5}
+  pcie_bw     : {'15.754': 0, '32': 1}
+  ktime_var   : {'0': 0, '0.05': 1, '0.10': 2, '0.15': 3, '0.20': 4, '0.25': 5}
+  stat        : {'ideal_exe_time': 0, 'exe_time': 1, 'pf_num': 2, 'evc_num': 3, 'ssd2gpu_traffic': 4, 'gpu2ssd_traffic': 5, 'cpu2gpu_traffic': 6, 'gpu2cpu_traffic': 7, 'stall_percentage': 8, 'overlap_percentage': 9, 'compute_percentage': 10}
+  Dimension Length: [5, 10, 6, 8, 6, 2, 6, 11]
+Model being processed: BERT_Base
+Index selection:
+  X:['256']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'G10GDSSSD', 'G10GDSFULL']
+Model being processed: VIT
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'G10GDSSSD', 'G10GDSFULL']
+Model being processed: Inceptionv3
+Index selection:
+  X:['1536']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'G10GDSSSD', 'G10GDSFULL']
+Model being processed: ResNet152
+Index selection:
+  X:['1280']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'G10GDSSSD', 'G10GDSFULL']
+Model being processed: SENet154
+Index selection:
+  X:['1024']
+  Y:['lru', 'FlashNeuron', 'deepUM', 'prefetch_lru', 'G10GDSSSD', 'G10GDSFULL']
+/NewData/hantch/G10/src/resources/figure_drawing/plot_mem_consumption.py:96: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_yticklabels(['{:0.0%}'.format(i*max_y_value/max_y_value) for i in ax.get_yticks()])
+/NewData/hantch/G10/src/resources/figure_drawing/plot_mem_consumption.py:96: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_yticklabels(['{:0.0%}'.format(i*max_y_value/max_y_value) for i in ax.get_yticks()])
+/NewData/hantch/G10/src/resources/figure_drawing/plot_mem_consumption.py:96: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_yticklabels(['{:0.0%}'.format(i*max_y_value/max_y_value) for i in ax.get_yticks()])
+/NewData/hantch/G10/src/resources/figure_drawing/plot_mem_consumption.py:96: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_yticklabels(['{:0.0%}'.format(i*max_y_value/max_y_value) for i in ax.get_yticks()])
+input 25909391360.0 50331648.0
+weight 25909391360.0 9115529216.0
+intermediate 25909391360.0 16743530496.0
+input 24743809024.0 38535168.0
+weight 24743809024.0 7351373824.0
+intermediate 24743809024.0 17353900032.0
+input 117903712256.0 308281344.0
+weight 117903712256.0 242307072.0
+intermediate 117903712256.0 117353123840.0
+input 48544608256.0 549281792.0
+weight 48544608256.0 96358400.0
+intermediate 48544608256.0 47898968064.0
+weight 1207959552.0 201326593.0
+intermediate 1207959552.0 1207959552.0
+weight 857739264.0 157286401.0
+intermediate 857739264.0 857739264.0
+weight 6576689152.0 9437185.0
+intermediate 6576689152.0 6576689152.0
+weight 11329359872.0 8196097.0
+intermediate 11329359872.0 11329359872.0
+/NewData/hantch/G10/src/resources/figure_drawing/overallBreakdown.py:77: RuntimeWarning: invalid value encountered in divide
+  all_data_arr[:, :, data_file_idx] /= sum_slice
+26498.7
+1658.0355075958523
+39517.83211259515
+39810.05310274669
+388359.0
+/NewData/hantch/anaconda3/lib/python3.9/site-packages/matplotlib/transforms.py:2053: RuntimeWarning: invalid value encountered in scalar add
+  self._mtx[1, 2] += ty
+/NewData/hantch/anaconda3/lib/python3.9/site-packages/matplotlib/transforms.py:396: RuntimeWarning: invalid value encountered in scalar subtract
+  return (x0, y0, x1 - x0, y1 - y0)
