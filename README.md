@@ -1,3 +1,11 @@
+# G10论文复现
+
+forked from https://github.com/platformxlab/G10.git
+
+按照原论文的配置，进行复现实验，复现运行后的结果保存在final_results目录下，example_results是原论文中提供的数据。
+
+下面是原始README
+
 # G10: Enabling An Efficient Unified GPU Memory and Storage Architecture with Smart Tensor Migrations  (Artifact)
 
 In this artifact, we provide the source code of G10 and the necessary instructions to reproduce the key performance results in our paper.
